@@ -40,6 +40,18 @@ def perimeter(r):
     '''
     return 2 * math.pi * r
 ```
+### Примеры использования
+```python
+import circle
+
+# Вычисление площади круга с радиусом 5
+area_result = circle.area(5)
+print("Площадь круга:", area_result)
+
+# Вычисление длины окружности с радиусом 7
+perimeter_result = circle.perimeter(7)
+print("Длина окружности:", perimeter_result)
+```
 
 ## triangle.py
 
@@ -71,6 +83,23 @@ def perimeter(a, b, c):
     '''
     return a + b + c
 ```
+### Примеры использования
+```python
+import triangle
+
+# Пример использования:
+base = 6
+height = 4
+area_result = triangle.area(base, height)
+
+side1 = 3
+side2 = 4
+side3 = 5
+perimeter_result = triangle.perimeter(side1, side2, side3)
+
+print("Площадь треугольника:", area_result)
+print("Периметр треугольника:", perimeter_result)
+```
 ## rectangle.py
 
 ### Модуль для работы с прямоугольниками
@@ -100,6 +129,19 @@ def perimeter(a, b):
     '''
     return (a + b) * 2
 ```
+### Примеры использования
+```python
+import rectangle
+
+# Вычисление площади прямоугольника с длинами сторон 4 и 7
+area_result = rectangle.area(4, 7)
+print("Площадь прямоугольника:", area_result)
+
+# Вычисление периметра прямоугольника с длинами сторон 3 и 5
+perimeter_result = rectangle.perimeter(3, 5)
+print("Периметр прямоугольника:", perimeter_result)
+```
+
 ## История изменений
 
 - `598d38e`: Изменен `rectangle.py` и добавлен `triangle.py`.
