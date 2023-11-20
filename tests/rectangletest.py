@@ -5,21 +5,21 @@ import unittest
 class RectangleTestCase(unittest.TestCase):
     def test_area_positive_int_values(self):
         res = rectangle.area(4, 7)
-        self.assertEqual(28, res, "Failed for positive int values")
+        self.assertEqual(28, res)
 
     def test_area_positive_float_values(self):
         res = rectangle.area(3.5, 2.5)
-        self.assertAlmostEqual(8.75, res, places=6, msg="Failed for float values")
+        self.assertAlmostEqual(8.75, res, places=6)
 
     def test_area_zero_values(self):
         res = rectangle.area(0, 7)
-        self.assertEqual(0, res, "Failed for zero values")
+        self.assertEqual(0, res)
 
     def test_area_negative_int_values(self):
         with self.assertRaises(ValueError):
             rectangle.area(-4, 7)
 
-    def test_area_negative_int_values(self):
+    def test_area_negative_float_values(self):
         with self.assertRaises(ValueError):
             rectangle.area(-4.8, 7.1)
 
@@ -37,15 +37,15 @@ class RectangleTestCase(unittest.TestCase):
 
     def test_perimeter_positive_int_values(self):
         res = rectangle.perimeter(3, 5)
-        self.assertEqual(16, res, "Failed for positive int values")
+        self.assertEqual(16, res)
 
     def test_perimeter_positive_float_values(self):
         res = rectangle.perimeter(3.5, 2.5)
-        self.assertAlmostEqual(12.0, res, places=6, msg="Failed for float values")
+        self.assertAlmostEqual(12.0, res, places=6)
 
     def test_perimeter_zero_values(self):
         res = rectangle.perimeter(0, 5)
-        self.assertEqual(res, 10, "Failed for zero values")
+        self.assertEqual(res, 10)
 
     def test_perimeter_negative_values(self):
         with self.assertRaises(ValueError):

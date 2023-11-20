@@ -5,15 +5,15 @@ import triangle
 class TriangleTestCase(unittest.TestCase):
     def test_area_positive_int_values(self):
         res = triangle.area(3, 3)
-        self.assertAlmostEqual(4.5, res, places=6, msg="Failed for int values")
+        self.assertAlmostEqual(4.5, res, places=6)
 
     def test_area_positive_float_values(self):
         res = triangle.area(3.5, 2.5)
-        self.assertAlmostEqual(4.375, res, places=6, msg="Failed for float values")
+        self.assertAlmostEqual(4.375, res, places=6)
 
     def test_area_zero_values(self):
         res = triangle.area(0, 7)
-        self.assertEqual(0, res, "Failed for zero values")
+        self.assertEqual(0, res)
 
     def test_area_negative_float_values(self):
         with self.assertRaises(ValueError):
@@ -33,15 +33,15 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_perimeter_positive_int_values(self):
         res = triangle.perimeter(3, 2, 4)
-        self.assertEqual(9, res, msg="Failed for int values")
+        self.assertEqual(9, res)
 
     def test_perimeter_positive_float_values(self):
         res = triangle.perimeter(3.5, 2.5, 4.0)
-        self.assertAlmostEqual(10.0, res, places=6, msg="Failed for float values")
+        self.assertAlmostEqual(10.0, res, places=6)
 
     def test_perimeter_zero_values(self):
         res = triangle.perimeter(0, 5, 0)
-        self.assertEqual(res, 5, "Failed for zero values")
+        self.assertEqual(res, 5)
 
     def test_perimeter_negative_float_values(self):
         with self.assertRaises(ValueError):
