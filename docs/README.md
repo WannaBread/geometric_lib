@@ -11,7 +11,7 @@
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
 
-# Документация для модулей circle.py, triangle.py и rectangle.py
+# Документация для модулей circle.py, triangle.py и rectangle.py 
 
 ## circle.py
 
