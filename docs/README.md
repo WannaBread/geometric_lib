@@ -29,7 +29,7 @@ def area(r):
     Returns:
         float: Площадь круга.
     '''
-    return math.pi * r * r
+    return math.pi  * r * r
 
 def perimeter(r):
     '''Вычисляет длину окружности.
