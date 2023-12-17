@@ -27,7 +27,7 @@ def area(r):
         r (float): Радиус круга.
 
     Returns:
-        float: Площадь круга.
+        float: Площадь  круга.
     '''
     return math.pi * r * r
 
