@@ -20,7 +20,7 @@ jobs:
         pip install --upgrade pip
     - name: Test with unittest
       run: |
-        python -m unittest tests\circletest.py
+        python -m unittest tests.circletest.py
         
   build-windows:
 
