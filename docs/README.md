@@ -52,7 +52,7 @@ print("Площадь круга:", area_result)
 
 # Вычисление длины окружности с радиусом 7
 perimeter_result = circle.perimeter(7)
-print("Длина окружности:", perimeter_result)
+print("Длина окружности:",perimeter_result)
 ```
 
 ## triangle.py
