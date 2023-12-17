@@ -20,7 +20,7 @@ jobs:
         pip install --upgrade pip
     - name: Test with unittest
       run: |
-        python -m unittest 
+        python -m unittest test/circletest.py test/rectangletest.py test/triangle.py
         
   build-windows:
 
@@ -38,4 +38,4 @@ jobs:
         pip install --upgrade pip
     - name: Test with unittest
       run: |
-        python -m unittest 
+        python -m unittest test/circletest.py test/rectangletest.py test/triangle.py
